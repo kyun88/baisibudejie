@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">BaiSiBuDeJie</string>
+
+    <string name="main_essence_text">精华</string>
+    <string name="main_mine_text">我</string>
+    <string name="main_newpost_text">新帖</string>
+    <string name="main_attention_text">关注</string>
+
+
+    <string name="main_mine_title_text">我的</string>
 </resources>
