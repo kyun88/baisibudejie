@@ -1,16 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:clickable="true"
     android:orientation="vertical">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/main_newpost_text"
-        android:textSize="30sp"
-        android:textColor="@color/main_bottom_text_select"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_newpost"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/essence_tab_bg"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/essence_tab_text_color_press"
+        app:tabTextColor="@color/essence_tab_text_color_normal"
+        app:tabIndicatorColor="@color/essence_tab_text_color_press"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_newpost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 </LinearLayout>
