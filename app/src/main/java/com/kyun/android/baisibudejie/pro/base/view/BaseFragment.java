@@ -26,7 +26,7 @@ public abstract class BaseFragment<P extends MvpBasePresenter> extends MvpFragme
             //如果存在，移除并重新添加,这样方式就可以缓存视图
             parent.removeView(viewContent);
         }
-        return super.onCreateView(inflater, container, savedInstanceState);
+        return viewContent;
     }
 
     @Override
